@@ -1,0 +1,412 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #f8f8f8; */
+	background-color: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+h1, h2, h3 {
+    /* color: #333; */
+	color: #333
+}
+
+p {
+    color: #666;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Logo Container */
+.logo {
+    display: flex;
+    align-items: center; /* Vertically center the logo and text */
+}
+
+.logo-img {
+    width: 50px;  /* Adjust logo size */
+    height: auto;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.logo-text {
+    font-size: 24px; /* Adjust text size */
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: #FFFFE0;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Menu Section */
+.menu {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient from one color to another */
+	padding: 2rem;
+    text-align: center;
+}
+
+/* Menu Heading */
+.menu h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Container for Menu Items */
+.menu-items {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    gap: 2.5rem; /* Space between images */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    max-width: 100%; /* Ensures items do not stretch across the full width */
+}
+
+/* Individual Menu Item */
+.menu-items .item {
+    width: 250px; /* Controls the width of each image */
+    height: auto;
+}
+
+/* Style for images */
+.menu-items .item img {
+    width: 100%; /* Make image take up the full width of the item box */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+    object-fit: cover; /* Ensures images are not stretched */
+}
+
+/* Aprtment Section */
+.apartment {
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Gradient from one color to another  #ff7e5f, #feb47b*/
+	padding: 2rem;
+    text-align: center;
+}
+
+/* Apartment Heading */
+.apartment h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Container for Apt images */
+.apt-images {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    gap: 2.5rem; /* Space between images */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    max-width: 100%; /* Ensures items do not stretch across the full width */
+}
+
+/* Individual Apartment Item */
+.apt-images .item {
+    width: 250px; /* Controls the width of each image */
+    height: auto;
+}
+
+/* Style for images */
+.apt-images .item img {
+    width: 100%; /* Make image take up the full width of the item box */
+    height: 100%; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+    object-fit: cover; /* Ensures images are not stretched */
+}
+
+/* Team Section */
+.team {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient from one color to another */
+	padding: 8rem 2rem;
+    text-align: center;
+	/* margin-bottom: 5rem; /* Add space below the gallery section */ 
+}
+
+/* Team Heading */
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Container for Team Items */
+.team-items {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    gap: 2.5rem; /* Space between images */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    max-width: 100%; /* Ensures items do not stretch across the full width */
+}
+
+/* Individual Menu Item */
+.team-items .item {
+    width: 250px; /* Controls the width of each image */
+    height: auto;
+}
+
+/* Style for images */
+.team-items .item img {
+    width: 100%; /* Make image take up the full width of the item box */
+    height: 100%; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+    object-fit: cover; /* Ensures images are not stretched */
+}
+
+/* Hover Effect */
+.team-item img:hover {
+    transform: scale(1.05);
+}
+
+//* Description Box */
+.description {
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+    height: 4.5rem; /* Set enough height for name and title */
+    line-height: 1.5rem; /* Line height for text */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+}
+
+/* Name Styling */
+.name {
+    font-weight: bold;
+    font-size: 1.2rem; /* Larger font for the name */
+    margin-bottom: 0.3rem; /* Space between name and title */
+}
+
+/* Title Styling */
+.title {
+    font-size: 1rem; /* Regular font size for the title */
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent dark background */
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Allow scrolling if image is larger than the viewport */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.lightbox .image-container {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Allows scrolling */
+    width: 100%;
+    height: 100%;
+}
+
+/* Image inside the lightbox */
+.lightbox img {
+    max-width: 100%; /* Ensure image doesn't exceed the container's width */
+    max-height: 100vh; /* Make sure image doesn't exceed the viewport's height */
+    object-fit: contain; /* Ensure image maintains aspect ratio while fitting within the container */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #ffffe0; */ /* Light background color f4f4f4*/
+	background-image: images/contact.png; /* Path to your background image */
+    padding: 3rem 10rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Center the contact subsections */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 8rem; /* Space between contact subsections */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    max-width: 100%; /* Ensures items do not stretch across the full width */
+}
+
+/* Individual Contact Item */
+.contact-item {
+    background-color: #ffffe0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px; /* Max width of each contact item */
+}
+
+/* Contact Item Titles */
+.contact-item h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+	argin-top: 2rem;
+}
+
+/* Contact Item Text (phone number, address) */
+.contact-item p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* Social Media Icons */
+.contact-item .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 5rem; /* Space between icons */
+    margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+
+/* Social Media Icons */
+.contact-item .social-icon img {
+    width: 60px; /* Icon size */
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+/* Style the address section */
+.address-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Map container styling */
+.map-container {
+    max-width: 100%;  /* Ensure it’s responsive */
+    margin-top: 1rem;
+}
+
+.map-container iframe {
+    width: 100%;      /* Full width of the container */
+    height: 100px;    /* Adjust height as necessary */
+    border: none;     /* No border for the iframe */
+}
+
+
+/* Hover effect for icons */
+.contact-item .social-icon img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 0.8rem;
+    width: 80%;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #333;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #111111;
+    color: pink and orange;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

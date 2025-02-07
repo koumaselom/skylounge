@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sky Lounge Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+				<img src="images/logo.jpeg" alt="Logo" class="logo-img" />
+            <h1 class="logo-text">Sky Lounge</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#menu">Bar Menu</a></li>
+                <li><a href="#apartment">Apartements</a></li>
+				<li><a href="#team">Notre Equipe</a></li>
+                <li><a href="#contact">Nos Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to SKY</h2>
+        <p>Enjoy delicious food and drinks in a cozy atmosphere.</p>
+		<p>Situe a Djagble Agodome.</p>
+		<p>Nous offrons des services de bar, de restauration et d'apartements a louer .</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Notre Menu</h2>
+        <div class="menu-items">
+			<!-- <img src="images/bar_menu1.jpg" alt="Grilled Burger" class="item-img" /> -->
+			<div class="item">
+				<img src="images/bar_menu1.jpg" alt="Grilled Burger" class="menu-img" onclick="openLightbox('images/bar_menu1.jpg')" />
+			</div>
+			<div class="item">
+				<img src="images/bar_menu2.jpg" alt="Caesar Salad" class="menu-img" onclick="openLightbox('images/bar_menu2.jpg')" />
+			</div>
+			<div class="item">
+				<img src="images/bar_menu3.jpg" alt="Cocktail Special" class="menu-img" onclick="openLightbox('images/bar_menu3.jpg')" />
+			</div>
+        </div>
+    </section>
+	
+	<!-- Lightbox Modal -->
+	<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+		<span class="close-btn">&times;</span>
+		<img id="lightbox-img" src="" alt="Enlarged Image" />
+	</div>
+
+    <!-- Apartment Section -->
+    <section id="apartment" class="apartment">
+        <h2>Nos Apartements</h2>
+        <div class="apt-images">
+           <div class="item">
+				<img src="images/apt1.jpeg" alt="Apt" class="apt-img" onclick="openLightbox('images/apt1.jpeg')" />
+			</div>
+			<div class="item">
+				<img src="images/apt2.jpeg" alt="Apt" class="apt-img" onclick="openLightbox('images/apt2.jpeg')" />
+			</div>
+			<div class="item">
+				<img src="images/apt3.jpeg" alt="Apt" class="apt-img" onclick="openLightbox('images/apt3.jpeg')" />
+			</div>
+			<div class="item">
+				<img src="images/apt4.jpeg" alt="Apt" class="apt-img" onclick="openLightbox('images/apt4.jpeg')" />
+			</div>
+			<div class="item">
+				<img src="images/apt5.jpeg" alt="Apt" class="apt-img" onclick="openLightbox('images/apt5.jpeg')" />
+			</div>
+			<div class="item">
+				<img src="images/apt6.jpeg" alt="Apt" class="apt-img" onclick="openLightbox('images/apt6.jpeg')" />
+			</div>
+			<div class="item">
+				<img src="images/apt7.jpeg" alt="Apt" class="apt-img" onclick="openLightbox('images/apt7.jpeg')" />
+			</div>
+			<div class="item">
+				<img src="images/apt8.jpeg" alt="Apt" class="apt-img" onclick="openLightbox('images/apt8.jpeg')" />
+			</div>
+        </div>
+    </section>
+	
+	<!-- Menu Section -->
+    <section id="team" class="team">
+        <h2>Notre Equipe</h2>
+        <div class="team-items">
+			<div class="item">
+				<img src="images/team1.jpeg" alt="Owner" class="menu-img" onclick="openLightbox('images/team1.jpeg')" />
+				<div class="description">
+					<div class="name">Jolisko Semenya</div>
+					<div class="title">Responsable SKY</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/team2.jpeg" alt="Manager" class="menu-img" onclick="openLightbox('images/team2.jpeg')" />
+				<div class="description">
+					<div class="name">Sonia Eklu</div>
+					<div class="title">Gerante SKY</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/team3.jpeg" alt="DJ" class="menu-img" onclick="openLightbox('images/team3.jpeg')" />
+				<div class="description">
+					<div class="name">DJ Future </div>
+					<div class="title">DJ SKY</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/team4.jpeg" alt="Orchestra Lead" class="menu-img" onclick="openLightbox('images/team4.jpeg')" />
+				<div class="description">
+					<div class="name">Maestro Henriscovich</div>
+					<div class="title">Lead Orchestre SKY</div>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+	<section id="contact" class="contact">
+		<h2>Contactez Nous</h2>	
+		<!-- Contact Information -->
+		<div class="contact-info">
+			<div class="contact-item">
+				<h3>Numero de Telephone</h3>
+				<p><a href="tel:+1234567890">+228 92 03 31 03</a></p>
+			</div>
+			
+			<div class="contact-item">
+				<h3>Adresse</h3>
+				<p>Djagble Agodome</p>
+					<!-- Google Map Embed -->
+			<div class="map-container">
+				<iframe
+					src="https://maps.app.goo.gl/us2NKq3bkQ6qSTC98"
+					width="100%" 
+					height="450" 
+					frameborder="0" 
+					style="border:0;" 
+					allowfullscreen="" 
+					aria-hidden="false" 
+					tabindex="0">
+				</iframe>
+			</div>
+			</div>
+			
+			<div class="contact-item">
+				<h3>Suivez Nous</h3>
+				<div class="social-media">
+					<a href="https://facebook.com" target="_blank" class="social-icon">
+						<img src="images/facebook.png" alt="Facebook">
+					</a>
+					<a href="https://tiktok.com" target="_blank" class="social-icon">
+						<img src="images/tiktok.png" alt="Tiktok">
+					</a>
+					<a href="https://instagram.com" target="_blank" class="social-icon">
+						<img src="images/instagram.png" alt="Instagram">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<script src="scripts.js"></script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Sky Lounge | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
